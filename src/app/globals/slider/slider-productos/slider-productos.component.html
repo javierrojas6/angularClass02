@@ -1,3 +1,10 @@
 <p>
   slider-productos works!
 </p>
+<ul>
+  <li *ngFor="let producto of productos">
+    <app-slider-producto-item
+    class="producto-item"
+     [producto]="producto"></app-slider-producto-item>
+  </li>
+</ul>
