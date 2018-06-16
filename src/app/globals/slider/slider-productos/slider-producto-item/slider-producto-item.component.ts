@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Producto } from '../../../../models/producto';
 
 @Component({
   selector: 'app-slider-producto-item',
@@ -6,8 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./slider-producto-item.component.scss']
 })
 export class SliderProductoItemComponent implements OnInit {
-
-  constructor() { }
+  @Input() producto: Producto;
+  constructor() {
+  }
 
   ngOnInit() {
   }

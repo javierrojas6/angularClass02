@@ -1,11 +1,11 @@
 export class Producto {
-    nombre:string;
-    descripcion:string;
-    precio:number;
-    imagen:string;
+  nombre: string;
+  descripcion: string;
+  precio: number;
+  imagen: string;
 
-    constructor() { 
-        
-    }
-  
+  constructor() {
+
   }
+
+}
