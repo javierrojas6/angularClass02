@@ -1,6 +1,5 @@
-import { Component, OnInit, Input, Output } from '@angular/core';
+import { Component, OnInit, EventEmitter,Input, Output } from '@angular/core';
 import { Producto } from '../../../../models/producto';
-import { EventEmitter } from 'events';
 
 @Component({
   selector: 'app-slider-producto-item',
@@ -9,7 +8,7 @@ import { EventEmitter } from 'events';
 })
 export class SliderProductoItemComponent implements OnInit {
   @Input() producto: Producto;
-  @Output() adicionar = new EventEmitter();
+  @Output() adicionar = new EventEmitter<Producto>();
 
   constructor() {
   }
@@ -22,6 +21,6 @@ export class SliderProductoItemComponent implements OnInit {
     //algun proceso aca...
 
     //disparar el nuevo evento
-    this.adicionar.emit('hola');
+    this.adicionar.emit(this.producto);
   }
 }

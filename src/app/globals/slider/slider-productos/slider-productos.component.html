@@ -1,7 +1,7 @@
 <ul>
   <li *ngFor="let unProducto of productos">
     <app-slider-producto-item 
-      (adicionar)="onAdicionar()"
+      (adicionar)="onAdicionar($event)"
       [producto]="unProducto"></app-slider-producto-item>
   </li>
 </ul>

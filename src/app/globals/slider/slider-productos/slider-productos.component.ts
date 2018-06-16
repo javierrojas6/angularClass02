@@ -29,6 +29,6 @@ export class SliderProductosComponent implements OnInit {
   }
 
   onAdicionar(producto: Producto) {
-    console.log('producto agregado');
+    console.log(`producto agregado ${producto.id}: ${producto.nombre} ${producto.precio}`);
   }
 }
