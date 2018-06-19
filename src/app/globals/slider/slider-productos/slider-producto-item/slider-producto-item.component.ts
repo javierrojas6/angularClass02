@@ -1,4 +1,4 @@
-import { Component, OnInit, EventEmitter,Input, Output } from '@angular/core';
+import { Component, OnInit, EventEmitter, Input, Output } from '@angular/core';
 import { Producto } from '../../../../models/producto';
 
 @Component({
@@ -21,6 +21,8 @@ export class SliderProductoItemComponent implements OnInit {
     //algun proceso aca...
 
     //disparar el nuevo evento
-    this.adicionar.emit(this.producto);
+    //setTimeout(() => {
+      this.adicionar.emit(this.producto);
+    //}, 3000);
   }
 }

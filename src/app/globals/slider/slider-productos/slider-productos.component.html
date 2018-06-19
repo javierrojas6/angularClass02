@@ -1,6 +1,7 @@
 <ul>
   <li *ngFor="let unProducto of productos">
     <app-slider-producto-item 
+      class="las-clases"
       (adicionar)="onAdicionar($event)"
       [producto]="unProducto"></app-slider-producto-item>
   </li>
